@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Preahvihear&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Preahvihear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VTF+Justina+GEO:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "VTF Justina GEO";
+  src: url("/fonts/VTFJustinaGEO.woff2") format("woff2"),
+    url("/fonts/VTFJustinaGEO.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-    font-family: "Preahvihear", serif;
+  font-family: "Preahvihear", serif;
 }

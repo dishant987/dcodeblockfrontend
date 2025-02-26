@@ -1,4 +1,3 @@
-import React from "react";
 
 const Button = ({ name, size = "md", isActive, onClick }) => {
     // Size variants
@@ -20,7 +19,7 @@ const Button = ({ name, size = "md", isActive, onClick }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 160 60"
                 fill="none"
-                className={`absolute inset-0 w-full h-full transition-all duration-300 ease-in-out ${isActive
+                className={`absolute inset-0 w-full h-full  transition-all duration-300 ease-in-out ${isActive
                     ? "drop-shadow-[0_0_12px_#6A0DAD]"
                     : "hover:drop-shadow-[0_0_12px_#B026FF]"
                     }`}
@@ -43,6 +42,7 @@ const Button = ({ name, size = "md", isActive, onClick }) => {
             >
                 {name}
             </span>
+
         </button>
     );
 };
