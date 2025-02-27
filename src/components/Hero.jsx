@@ -7,7 +7,8 @@ const Hero = () => {
     const [isRegisterOpen, setIsRegisterOpen] = useState(false);
     const [isRegistered, setIsRegistered] = useState(false);
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         setIsRegisterOpen(false);
         setIsRegistered(true);
 
@@ -243,20 +244,24 @@ const Hero = () => {
                             <h2 className="text-2xl font-bold text-black dark:text-white text-center mb-4">
                                 Register for HackIndia 2025
                             </h2>
-                            <input
-                                type="text"
-                                placeholder="Your Name"
-                                className="w-full p-2 mb-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F86720]"
-                            />
-                            <input
-                                type="email"
-                                placeholder="Your Email"
-                                className="w-full p-2 mb-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F86720]"
-                            />
-                            <div className="flex justify-between">
-                                <Button name="Cancel" size="sm" onClick={() => setIsRegisterOpen(false)} />
-                                <Button name="Submit" size="sm" onClick={handleSubmit} />
-                            </div>
+                            <form onSubmit={handleSubmit}>
+                                <input
+                                    type="text"
+                                    required
+                                    placeholder="Your Name"
+                                    className="w-full p-2 mb-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F86720]"
+                                />
+                                <input
+                                    required
+                                    type="email"
+                                    placeholder="Your Email"
+                                    className="w-full p-2 mb-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F86720]"
+                                />
+                                <div className="flex justify-between">
+                                    <Button name="Cancel" size="sm" onClick={() => setIsRegisterOpen(false)} />
+                                    <Button type="submit" name="Submit" size="sm" />
+                                </div>
+                            </form>
                         </motion.div>
                     </motion.div>
                 )}

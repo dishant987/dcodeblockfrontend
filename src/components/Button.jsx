@@ -1,5 +1,5 @@
 
-const Button = ({ name, size = "md", isActive, onClick }) => {
+const Button = ({ name, size = "md", isActive, onClick, type = "button" }) => {
     // Size variants
     const sizeClasses = {
         sm: "min-w-[100px] max-w-[120px] min-h-[30px] px-3 text-xs",
@@ -9,6 +9,7 @@ const Button = ({ name, size = "md", isActive, onClick }) => {
 
     return (
         <button
+            type={type}
             className={`relative flex items-center justify-center w-full whitespace-nowrap font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95 
             text-white
              ${sizeClasses[size]}`}
