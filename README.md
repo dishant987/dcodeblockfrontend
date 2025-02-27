@@ -29,3 +29,12 @@ npm install
 # or
 yarn install
 ```
+## Running the Application
+
+To start the development server, run the following command:
+
+```sh
+npm run dev
+# or
+yarn dev
+```
