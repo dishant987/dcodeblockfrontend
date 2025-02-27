@@ -1,8 +1,31 @@
-# React + Vite
+# dcodeblockfrontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+`dcodeblockfrontend` is a frontend project that utilizes Vite as a build tool and React for UI development. It is designed for efficient and performant web application development, integrating Tailwind CSS for styling and Framer Motion for animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
+You can view the deployed application here:  
+🔗 **[Live App](https://dishantdcodeblock.vercel.app/)**
+
+## Project Structure
+
+This project is structured as follows:
+
+- **Package Manager**: Uses npm/yarn for dependency management.
+- **Build Tool**: Vite is used for development and production builds.
+- **Linting**: ESLint is configured to ensure code quality.
+- **Styling**: Tailwind CSS and PostCSS are used for styling.
+- **Animations**: Framer Motion is included for animations.
+
+## Installation
+
+To get started, clone the repository and install dependencies:
+
+```sh
+git clone <repository-url>
+cd dcodeblockfrontend
+npm install
+# or
+yarn install
+```
